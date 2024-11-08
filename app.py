@@ -34,19 +34,20 @@ def build_model(input_data):
     st.write(df)
     st.markdown(filedownload(df), unsafe_allow_html=True)
 
-# Logo image
+# Logo image    
 image = Image.open('logo.png')
 
 st.image(image, use_column_width=True)
 
 # Page title
 st.markdown("""
-# Bioactivity Prediction App (Acetylcholinesterase)
+# Bioactivity Prediction App (Glucagon-like Peptide - 1)
 
-This app allows you to predict the bioactivity towards inhibting the `Acetylcholinesterase` enzyme. `Acetylcholinesterase` is a drug target for Alzheimer's disease.
+       
+This app allows you to predict the bioactivity towards activating the `Glucagon-like Peptide-1` protein. `Glucagon-like Peptide-1` is a drug target for diabetes.
 
 **Credits**
-- App built in `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
+- App built in `Pthon` + `Streamlit` by [Joseph Oyong](https://www.linkedin.com/in/joseph-oyong-82386b182?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) (aka [Data Pharmacist](https://www.linkedin.com/in/joseph-oyong-82386b182?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app))
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 ---
 """)
